@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>For</title>
 </head>
 <body>
-    
+    <script>
+        var soma = 0;
+        for(var n = 0; n < 4; n += 1){
+            var numero = parseInt(prompt("Digite um Número: "));
+            soma += numero;
+        }
+
+        alert("A soma dos números é " + soma)
+    </script>
 </body>
 </html>
