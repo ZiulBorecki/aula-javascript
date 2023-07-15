@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+</head>
+<body>
+    <script>
+        var num;
+        var soma = 0;
+        var resultado;
+
+        while (true) {
+            num = parseFloat(prompt('Digite um número: '));
+            soma += num;
+            alert('A soma Atual é: ' + soma + ('. Digite 0 para Sair.'));
+            if (num == 0){
+                alert('Resultado da Soma ' + soma);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

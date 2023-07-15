@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhação</title>
+</head>
+<body>
+    <script>
+        var valor = 10;
+        var num;
+        var contador = 0;
+
+        while (true) {
+            num = parseInt(prompt('Digite um número inteiro: '));
+            contador += 1;
+            if (num == valor){
+                alert('Parabéns! Você acertou o número na ' + contador + 'º tentativa.');
+                break;
+            } else {
+                if (num > valor){
+                    alert('Você errou! Número digitado é maior. Quantidade de erros: ' + contador)
+                }else{
+                    alert('Você errou! Número digitado é menor. Quantidade de erros: ' + contador)
+                }   
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        var resultado = 0;
+        var num1;
+        var num2; 
+        var operação;
+        var continuar;
+        while (true) {
+            num1 = parseFloat(prompt('Digite o 1º número: '));
+            num2 = parseFloat(prompt('Digite o 2º número: '));
+            operacao = parseInt(prompt('Qual operação deseja realizar( soma=1/ sub=2/ div=3/ mult=4)'));
+
+            if (operacao == 1){
+                resultado = num1 + num2;
+                alert(resultado);
+            }
+            else if (operacao == 2){
+                resultado = num1 - num2;
+                alert(resultado);
+            }
+            else if (operacao == 3){
+                resultado = num1 / num2;
+                alert(resultado);
+            }
+            else if (operacao == 4){
+                resultado = num1 * num2;
+                alert(resultado);
+            }
+
+            continuar = parseInt(prompt('Deseja Continuar: ( Sim = 1/ Não = 2)'));
+
+            if (continuar == 2){
+                break;
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
