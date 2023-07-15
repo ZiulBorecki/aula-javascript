@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Caracteres</title>
+</head>
+<body>
+    <script>
+        var lista = ['abelha','café','banco','senai','unu','uva','pneu']
+        var listaMaior =[]
+
+        // of -> exibe o valor da lista
+        // in -> mostra a posição dos elementos
+        for (var palavra of lista) {
+            // verifica se o numero e par
+            if (palavra.length >= 5){
+                // adiciona o numero par a lista
+                listaMaior.push(palavra)
+            }
+        }
+
+        console.log(listaMaior)
+    </script>
+</body>
+</html>

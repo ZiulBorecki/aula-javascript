@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Pares</title>
+</head>
+<body>
+    <script>
+        var lista = [2,10,1,12,22,30,13];
+        var pares = [];
+
+        for (var numero of lista) {
+            if (numero % 2 == 0) {
+                pares.push(numero)
+            }
+        }
+
+        if(lista.length == pares.length) {
+            console.log('A lista contém apenas números pares.');
+        }else{
+            console.log('A lista não contém apenas números pares.');
+        }
+    </script>
+</body>
+</html>
