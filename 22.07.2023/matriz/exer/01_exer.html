@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <!-- 01 Escreva um programa em Js que receba uma matriz e retorna outra matriz com os valores de linhs e
+    colunas trocadas -->
+<script>
+    var matriz = [
+        [1,2,3],
+        [4,5,6],
+    ]
+
+var novaMatriz = []
+
+for (linha of matriz) {
+    var lista = []
+    for (coluna of linha) {
+        for(let lin=3 ; lin>1 ; lin--)
+        lista.push(coluna[lin])
+    }
+    novaMatriz.push(lista)
+}
+
+console.log(matriz)
+console.log(novaMatriz)
+
+</script>
+</body>
+</html>

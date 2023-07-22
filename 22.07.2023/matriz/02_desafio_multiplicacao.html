@@ -1,0 +1,21 @@
+<script>
+    var matriz = [
+        [1,3,4],
+        [4,5,6],
+    ]
+var n = 10
+
+var novaMatriz = []
+
+for (linha of matriz) {
+    var lista = []
+    for (coluna of linha) {
+        lista.push(coluna * n)
+    }
+    novaMatriz.push(lista)
+}
+
+console.log(matriz)
+console.log(novaMatriz)
+
+</script>

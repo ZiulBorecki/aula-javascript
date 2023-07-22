@@ -1,0 +1,19 @@
+<script>
+    var matriz = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ]
+var multiplicacao = 1
+
+    for (item of matriz) {
+        for(coluna of item) {
+            if (coluna % 2 == 0){
+            multiplicacao = multiplicacao * coluna
+        }
+        }
+    }
+
+    console.log(multiplicacao)
+
+</script>

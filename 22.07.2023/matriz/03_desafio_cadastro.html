@@ -1,0 +1,25 @@
+<script>
+    var matriz = []
+
+while (true) {
+    var nome = prompt("Digite o nome: ");
+    var email = prompt("Digite o e-mail: ");
+    var numero = prompt("Digite o telefone: ");
+
+    var lista = []
+
+    lista.push(nome, email, numero)
+
+    matriz.push(lista)
+
+    continuar = parseInt(prompt('Deseja Continuar: ( Sim = 1/ Não = 2)'));
+
+if (continuar == 2){
+    break;
+}
+}
+
+console.log(matriz)
+
+
+</script>
