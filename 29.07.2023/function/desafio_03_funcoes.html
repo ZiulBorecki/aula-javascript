@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        var lista = [];
+
+        while (true) {
+            valor = prompt('Digite um valor: ');
+            adicionarLista(valor);
+
+            continuar = parseInt(prompt('Deseja adicionar mais valores? ( Sim = 1/ Não = 2)'));
+
+            if (continuar == 2){
+                listarValores(lista);
+                break;
+            }
+        }
+
+        function adicionarLista( num = 0) {
+            lista.push(num);
+            return lista;
+        }
+
+        console.log(lista)
+
+        function listarValores( lista) {
+            for (let numero of lista) {
+                alert(numero)
+        }
+        }
+
+    </script>
+    
+</body>
+</html>

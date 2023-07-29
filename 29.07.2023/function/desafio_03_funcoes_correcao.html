@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        function adicionarItens(lista, add) {
+            lista.push(add)
+            return lista
+        }
+
+        function listaItens(lista) {
+            for(let item of lista) {
+                console.log(item)
+            }
+        }
+
+        var minhaLista = [2,3,"ssa", 4, "fff"]
+        minhaLista = adicionarItens(minhaLista, "ssasa")
+
+        listaItens(minhaLista)
+        
+    </script>
+    
+</body>
+</html>
