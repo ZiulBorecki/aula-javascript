@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Números Primos
+
+    </title>
+</head>
+<body>
+    <script>
+        function verificaPrimo(num) {
+            var divide = 2
+
+            if ( num <= 1 ) {
+                return "Não é primo"
+        }
+            while(divide < num) {
+                if (num % divide === 0) {
+                    return "Não é Primo"
+                }
+                divide = divide + 1
+            }
+
+            return "É Primo"
+        }
+
+        const verificaPrimo2 = (num) => {
+            var divide = 2
+            
+            if ( num <= 1 ) {
+                return "Não é primo"
+            }
+            while(divide < num) {
+                if (num % divide === 0) {
+                    return "Não é Primo"
+                }
+                divide = divide + 1
+            }
+
+            return "É Primo"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        // função normal
+        function ola() {
+            console.log("Hello Word 1")
+        }
+
+        // função anônima
+        var ola2 = function() {
+            console.log("Hello Word 2")
+        }
+
+        // função de seta (arrow function)
+        var ola3 = () => {
+            console.log("Hello Word 3")
+        }
+
+        ola()
+        ola2()
+        ola3()
+
+        console.log("1")
+        setTimeout(ola2, 1000)
+        console.log("2")
+        // atualize as informações do gradico
+        setInterval(ola3, 1000)
+
+    </script>
+</body>
+</html>
