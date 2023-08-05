@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessando Objetos Alinhados</title>
+</head>
+<body>
+    <script>
+        var carro = {
+            marca: "Ford",
+            modelo: "Ford Ka",
+            proprietario: {
+                nome: 'Marcos',
+                idade: 35,
+            },
+            dono_veiculo() {
+                alert("O nome do dono do veículo é "+ this.proprietario.nome)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando Objetos</title>
+</head>
+<body>
+    <script>
+
+        chave = prompt('Digite a chave: ');
+        valor = prompt('Digite o valor: ');
+
+        var carro = {
+            marca: "Ford",
+            modelo: "Ford Ka",
+        }
+
+        function modificar_obj(obj, chave, valor) {
+            obj[chave] = valor
+        }
+
+        modificar_obj(carro, chave, valor)
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos e Array
+    </title>
+</head>
+<body>
+    <script>
+        var pessoa = [
+            {
+                nome: 'Felipe',
+                idade: 19,
+            },
+            {
+                nome: 'José',
+                idade: 27,
+            },
+            {
+                nome: 'Luiz',
+                idade: 30,
+            }
+        ]
+        
+        var idadeMaior = 0
+        var nomeEscolhido = ""
+
+        var verificar = (pessoa) => {
+            for (valor in pessoa) {
+                if (pessoa[valor].idade > idadeMaior) {
+                    idadeMaior = pessoa[valor].idade
+                    nomeEscolhido = pessoa[valor].nome
+                }
+            }
+            console.log(nomeEscolhido)
+        }
+
+        verificar(pessoa)
+    
+    </script>
+</body>
+</html>

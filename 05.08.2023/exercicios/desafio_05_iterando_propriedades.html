@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos em Objetos</title>
+</head>
+<body>
+    <script>
+        var pessoa = {
+            nome: "Odair",
+            idade: 70,
+            email: 'odair@gmail.com',
+        }
+
+        function listar(objeto) {
+            for ( chave in objeto) {
+                console.log(`${chave} = ${pessoa[chave]}`)
+            }
+        }
+
+        listar(pessoa)
+    </script>
+</body>
+</html>
