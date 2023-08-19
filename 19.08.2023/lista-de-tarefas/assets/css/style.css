@@ -1,0 +1,8 @@
+.fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(198, 198, 198);
+    width: 400px;
+}
